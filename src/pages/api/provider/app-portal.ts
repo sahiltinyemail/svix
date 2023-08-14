@@ -15,7 +15,9 @@ export default async function handler(
 
   const svix = new Svix(process.env.SVIX_TOKEN!);
   // The username would normally be fetched from auth, and not body!
-  const { url, token } = await svix.authentication.appPortalAccess(username, {});
+  const { url, token } = await svix.authentication.appPortalAccess(username, {
+    featureFlags: ['']
+  });
 
   res.json({ url, token });
 }

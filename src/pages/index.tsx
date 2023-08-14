@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Svix example</title>
+        <title>Tiny Relay</title>
       </Head>
       <main>
         <h1 className="text-3xl font-bold underline">Login required</h1>

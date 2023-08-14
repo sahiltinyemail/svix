@@ -9,7 +9,7 @@ export default function Login() {
 
     await postWithAuth(undefined, "/api/provider/signup", {
       username: hardcodedUsername,
-      company: "John Doe's",
+      company: "Tiny Relay",
     });
 
     router.push("/dashboard");
